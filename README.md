@@ -30,7 +30,7 @@ We evaluate submissions according to the following criteria:
 * The code that generates OCD-IDs can be easily changed
 * The project has documentation
 * There are tests for some added functionality
-* Functions are small and clearly scoped
+* Functions/classes/methods are small and clearly scoped
 * Names are clear
 
 The goal is to see that you can get some working code that is readable
