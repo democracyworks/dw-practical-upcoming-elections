@@ -52,7 +52,10 @@ you decide to collaborate on.
 Project templates exist for Clojure and JavaScript. You may choose
 another language, or choose to not work from these templates. If you
 choose to not use a template, be sure to document how to run your
-project. Pick a language that you're comfortable in.
+project.
+
+Pick a language that you're comfortable in. There are no bonus points
+for making a particular choice here.
 
 ## About OCD-IDs
 
