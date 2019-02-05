@@ -34,7 +34,9 @@ We evaluate submissions according to the following criteria:
 * Names are clear
 
 The goal is to see that you can get some working code that is readable
-to others.
+to others. We do not expect you to complete everything on this list,
+nor is this list exhaustive of what would go into a "real" project
+(there is no consideration for failure cases, for example).
 
 ## After submission
 
