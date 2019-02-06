@@ -111,7 +111,7 @@ election to your app.
 
 [ocd-ids]: http://opencivicdata.readthedocs.io/en/latest/data/datatypes.html
 [edn]: https://github.com/edn-format/edn
-[upcoming-elections]: https://github.com/democracyworks/dw-code-exercise-lein-template/wiki/Current-elections
+[upcoming-elections]: https://github.com/democracyworks/dw-practical-upcoming-elections/wiki/Upcoming-Elections
 
 [clojure-template]: https://github.com/democracyworks/dw-practical-upcoming-elections/tree/master/clojure
 [javascript-template]: https://github.com/democracyworks/dw-practical-upcoming-elections/tree/master/javascript
