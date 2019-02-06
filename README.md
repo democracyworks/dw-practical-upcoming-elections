@@ -57,6 +57,9 @@ project.
 Pick a language that you're comfortable in. There are no bonus points
 for making a particular choice here.
 
+The templates include some libraries for HTTP routing and HTML
+templating. You are encouraged add dependencies as needed.
+
 ## About OCD-IDs
 
 OCD-IDs are [Open Civic Data division identifiers][ocd-ids] and they
