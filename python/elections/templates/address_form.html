@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="address-form">
+  <h1>Find my next election</h1>
+  <form method="post" action="/search">
+    <p>Enter the address where you are registered to vote.</p>
+    <div>
+      <label for="street-field">Street: </label>
+      <input name="street" id="street-field" type="text"></div>
+    <div>
+      <label for="street-2-field">Street-2: </label>
+      <input name="street-2" id="street-2-field" type="text"></div>
+    <div>
+      <label for="city-field">City: </label>
+      <input name="city" id="city-field" type="text">
+      <label for="state-field">State: </label>
+      <select name="state" id="state-field">
+        <option></option>
+        {% for state in states %}
+          <option value=state>{{ state }}</option>
+        {% endfor %}
+      </select>
+      <label for="zip-field">Zip: </label>
+      <input name="zip" id="zip-field" size="10" type="text"></div>
+    <div class="button"><button type="submit" value="submit">Search</button></div>
+  </form>
+{% endblock %}
