@@ -1,6 +1,6 @@
 import functools
 
-from us_states import states
+from elections.us_states import states
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
