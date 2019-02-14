@@ -1,6 +1,6 @@
 import functools
 
-from elections.us_states import states
+from elections.us_states import postal_abbreviations
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
