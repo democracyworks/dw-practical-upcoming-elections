@@ -38,7 +38,17 @@ to others. We do not expect you to complete everything on this list,
 nor is this list exhaustive of what would go into a "real" project
 (there is no consideration for failure cases, for example).
 
-## After submission
+## The anonymous review
+
+In order to reduce potential bias, your submission will be graded
+anonymously. To make that easier, please don't include any personally
+identifying information in your code or documentation.
+
+Good addresses to use in documentation or tests include well-known
+places (like the White House or Disneyland) or the Democracy Works
+office in Brooklyn (20 Jay St, Brooklyn, NY 11201).
+
+## After review
 
 If your submission passes the evaluation phase, the next part of our
 interview process is a pairing session with one of our software
