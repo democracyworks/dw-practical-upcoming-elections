@@ -59,10 +59,11 @@ you decide to collaborate on.
 
 ## Project templates
 
-Project templates exist for [Clojure][clojure-template] and
-[JavaScript][javascript-template]. You may choose another language, or
-choose to not work from these templates. If you choose to not use a
-template, be sure to document how to run your project.
+Project templates exist for [Clojure][clojure-template],
+[JavaScript][javascript-template], and [Python][python-template]. You
+may choose another language, or choose to not work from these
+templates. If you choose to not use a template, be sure to document
+how to run your project.
 
 Pick a language that you're comfortable in. There are no bonus points
 for making a particular choice here.
@@ -125,3 +126,4 @@ election to your app.
 
 [clojure-template]: https://github.com/democracyworks/dw-practical-upcoming-elections/tree/master/clojure
 [javascript-template]: https://github.com/democracyworks/dw-practical-upcoming-elections/tree/master/javascript
+[python-template]: https://github.com/democracyworks/dw-practical-upcoming-elections/tree/master/python
