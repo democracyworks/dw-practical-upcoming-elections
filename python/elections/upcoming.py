@@ -15,4 +15,4 @@ def search():
     if request.method == 'POST':
         return render_template('election_results.html')
 
-    return render_template('address_form.html', states=states)
+    return render_template('address_form.html', states=postal_abbreviations)
