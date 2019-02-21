@@ -1,5 +1,7 @@
 # Upcoming Elections Practical
-Instructions for installing Flask can be found [here](http://flask.pocoo.org/docs/1.0/installation/)
+Full instructions for installing Flask can be found [here](http://flask.pocoo.org/docs/1.0/installation/)
+otherwise:
+'pip install -r requirements.txt'
 
 ## Running
 
