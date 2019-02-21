@@ -5,7 +5,7 @@ exercise is designed to show off your ability to program a small
 application that interacts with an API. You should spend no more than
 2 hours on it and then turn it in to us. You may submit by zipping up
 the contents of your project's directory and emailing it to
-chris@democracy.works.
+katrina@democracy.works.
 
 ## The project
 
