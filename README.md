@@ -69,7 +69,7 @@ Pick a language that you're comfortable in. There are no bonus points
 for making a particular choice here.
 
 The templates include some libraries for HTTP routing and HTML
-templating. You are encouraged add dependencies as needed.
+templating. You are encouraged to add dependencies as needed.
 
 ## About OCD-IDs
 
