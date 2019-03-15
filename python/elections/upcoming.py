@@ -1,4 +1,6 @@
 import functools
+import requests
+import json
 
 from elections.us_states import postal_abbreviations
 
@@ -18,8 +20,25 @@ def search():
 
 
 @bp.route('/search', methods=('POST',))
-def do_something():
+def fetch_elections():
     if request.method == 'POST':
-        city_name = str(request.form['city'])
-        state_name = str(request.form['state'])
-        return render_template('upcoming_elections.html', city=city_name, state=state_name)
+        city_name = str(request.form['city']).lower().replace(' ', '_')
+        state_abbrev = str(request.form['state']).lower()
+
+        json_reponse = query_data(city_name, state_abbrev)
+        return render_template('upcoming_elections.html', city=city_name, state=state_abbrev, results=json_reponse)
+
+
+def query_data(city_name, state_abbreviation):
+    """ Query the Turbovote API for local elections """
+    state_ocd_id = 'ocd-division/country:us/state:'+state_abbreviation
+    city_ocd_id = state_ocd_id+'/place:'+city_name
+    query_url = 'https://api.turbovote.org/elections/upcoming?district-divisions='
+
+    query = query_url+state_ocd_id+','+city_ocd_id
+    headers = {'accept': 'application/json'}
+
+    response = requests.get(
+        query, headers=headers)
+    data = response.json()
+    return data
