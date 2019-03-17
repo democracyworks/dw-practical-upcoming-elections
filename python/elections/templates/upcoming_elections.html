@@ -1,15 +1,35 @@
 {% extends 'base.html' %} {% block content %}
 <div>
-  <h1>Local Elections Near You!</h1>
-  <table border="1">
-    <th>City</th>
-    <th>State</th>
-    <tr>
-      <td>{{ city }}</td>
-      <td>{{ state }}</td>
-    </tr>
-  </table>
+  <h1>Local Elections Near {{ city | title }}, {{ state.upper() }}!</h1>
 
-  <p>{{ results }}</p>
+  {% if results == {} %}
+    <p>There are no local elections near you! Please check back later!</p>
+  {% else %}
+    <p><strong>Description:</strong> {{ results['description'] }}</p>
+    <p><strong>Election Authority Level:</strong> {{ results['election_authority_level'] | title }}</p>
+    <p><strong>Website:</strong> <a href="{{ results['website'] }}" target="_blank">{{ results['website'] }}</a></p>
+    <p><strong>Date:</strong> {{ results['date'][0:10] }}</p>
+    <p><strong>Polling Place URL:</strong> <a href="{{ results['polling_place_url'] }}" target="_blank">{{ results['polling_place_url'] }}</a></p>
+    <p><strong>Population:</strong> {{ "{:,d}".format(results['population']) }}</p>
+    <p><strong>Voting Options:</strong></p>
+    <ul>
+      {% if results['early_voting'] %}
+        <li><strong>Early Voting Available:</strong> Yes</li>
+      {% else %}
+        <li><strong>Early Voting Available:</strong> No</li>
+      {% endif %}
+      {% if results['in_person'] %}
+        <li><strong>In-Person Available:</strong> Yes</li>
+      {% else %}
+        <li><strong>In-Person Available:</strong> No</li>
+      {% endif %}
+      {% if results['by_mail'] %}
+        <li><strong>By-Mail Available:</strong> Yes</li>
+      {% else %}
+        <li><strong>By-Mail Available:</strong> No</li>
+      {% endif %}
+    </ul>
+
+  {% endif %}
   {% endblock %}
 </div>
