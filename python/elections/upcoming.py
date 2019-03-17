@@ -30,6 +30,11 @@ def fetch_elections():
         city_name = str(request.form['city']).lower().replace(' ', '_')
         state_abbreviation = str(request.form['state']).lower()
 
-        json_reponse = query_data(city_name, state_abbreviation)
-        election_data = temp_store_data(json_reponse)
+        json_response = query_data(city_name, state_abbreviation)
+
+        if json_response != []:
+            election_data = temp_store_data(json_response)
+        else:
+            election_data = {}
+        
         return render_template('upcoming_elections.html', city=city_name, state=state_abbreviation, results=election_data)
