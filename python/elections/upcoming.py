@@ -8,7 +8,7 @@ import json
 
 # Local Imports
 from elections.us_states import postal_abbreviations
-from elections.query import query_data
+from elections.query import query_data, temp_store_data
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
@@ -31,4 +31,5 @@ def fetch_elections():
         state_abbreviation = str(request.form['state']).lower()
 
         json_reponse = query_data(city_name, state_abbreviation)
-        return render_template('upcoming_elections.html', city=city_name, state=state_abbreviation, results=json_reponse)
+        election_data = temp_store_data(json_reponse)
+        return render_template('upcoming_elections.html', city=city_name, state=state_abbreviation, results=election_data)
