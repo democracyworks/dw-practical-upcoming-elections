@@ -6,15 +6,20 @@ import json
 
 
 def query_data(city_name, state_abbreviation):
-    """ Query the Turbovote API for local elections """
+    """ Query the Turbovote API for local elections; return json if election data
+    available else empty list """
 
     query = 'https://api.turbovote.org/elections/upcoming?district-divisions=ocd-division/country:us/state:{0},ocd-division/country:us/state:{0}/place:{1}'.format(
         state_abbreviation, city_name)
     headers = {'Accept': 'application/json'}
 
     response = requests.get(query, headers=headers)
-    json_response = response.json()
-    return json_response
+
+    if response != []:
+        json_response = response.json()
+        return json_response
+    else:
+        return []
 
 
 def temp_store_data(json_response):
