@@ -107,9 +107,23 @@ separated by a comma as shown in the example URL below.
 
     https://api.turbovote.org/elections/upcoming?district-divisions=ocd-division/country:us/state:ma,ocd-division/country:us/state:ma/place:wayland
 
+## About the API
+
+The upcoming elections API endpoint lives at
+`https://api.turbovote.org/elections/upcoming`. You'll make `GET`
+requests to it.
+
+You'll need to supply a query string with a `district-divisions`
+key. Its value should be comma-delimited OCD-IDs. See the example
+above.
+
 The response will be in the [EDN format][edn] (commonly used in
 Clojure) by default, but you can request JSON by setting your
-request's Accept header to 'application/json' if you prefer.
+request's Accept header to `application/json` if you prefer.
+
+The API is not configured for CORS, so you won't be able to make
+requests from the user's browser. You'll have to have a server process
+to make those requests. The provided templates have you covered.
 
 ## Current elections
 
