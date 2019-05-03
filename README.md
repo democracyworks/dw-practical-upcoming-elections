@@ -48,15 +48,6 @@ Good addresses to use in documentation or tests include well-known
 places (like the White House or Disneyland) or the Democracy Works
 office in Brooklyn (20 Jay St, Brooklyn, NY 11201).
 
-## After review
-
-If your submission passes the evaluation phase, the next part of our
-interview process is a pairing session with one of our software
-developers where the two of you will continue work on the
-project. Often, that session involves updating the OCD-ID code to
-query another API to retrieve them but could be anything the two of
-you decide to collaborate on.
-
 ## Project templates
 
 Project templates exist for [Clojure][clojure-template],
