@@ -1,18 +1,33 @@
 # Upcoming Elections Practical
 Full instructions for installing Flask can be found [here](http://flask.pocoo.org/docs/1.0/installation/).
 
-Otherwise:
+## Set up Python3 env
 
 ```
+pip install --upgrade virtualenv
+
+# Create a virtual env in Python3 called `dw_practical`
+virtualenv --python=python3 dw_practical
+
+# Enter the virtual env -- you'll need to do this every time to run anything
+source ./dw_practical/bin/activate
+
+# Install the requirements
 pip3 install -r requirements.txt
+
+# If you want to exit the virtualenv when you're done, you can use the `deactivate` command by itself.
 ```
 If you don't have `pip` installed, follow the instructions [here](https://pip.pypa.io/en/stable/installing/)
+
 
 ## Running
 
 From the `dw-practical-upcoming-elections/python` directory, run the following:
 
 ```
+# If you haven't done this in this terminal yet
+source ./dw_practical/bin/activate
+
 export FLASK_APP=elections
 export FLASK_ENV=development
 flask run
@@ -21,6 +36,9 @@ flask run
 ## Testing
 
 ```
+# If you haven't done this in this terminal yet
+source ./dw_practical/bin/activate
+
 pytest
 ```
 
@@ -39,13 +57,3 @@ as was previously allowed.
 
 If setting up or running Python 3 causes you any issues, please reach out. Getting things running
 is not part of the evaluation and we'll be happy to help troubleshoot without judgement.
-
-### After the practical
-If you run other personal projects in Python 2, you may want to re-install the requirements in the
-`requirements.txt` file with Python 2 after you are done with this practical to avoid unexpected
-issues.
-
-```
-# Note `pip` instead of `pip3` here
-pip install -r requirements.txt
-```
