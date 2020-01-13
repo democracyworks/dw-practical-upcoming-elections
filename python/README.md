@@ -6,11 +6,11 @@ Full instructions for installing Flask can be found [here](http://flask.pocoo.or
 ```
 pip install --upgrade virtualenv
 
-# Create a virtual env in Python3 called `dw_practical`
-virtualenv --python=python3 dw_practical
+# Create a virtual env in Python3 called `dw_venv`
+virtualenv --python=python3 dw_venv
 
 # Enter the virtual env -- you'll need to do this every time to run anything
-source ./dw_practical/bin/activate
+source ./dw_venv/bin/activate
 
 # Install the requirements
 pip3 install -r requirements.txt
@@ -26,7 +26,7 @@ From the `dw-practical-upcoming-elections/python` directory, run the following:
 
 ```
 # If you haven't done this in this terminal yet
-source ./dw_practical/bin/activate
+source ./dw_venv/bin/activate
 
 export FLASK_APP=elections
 export FLASK_ENV=development
@@ -37,7 +37,7 @@ flask run
 
 ```
 # If you haven't done this in this terminal yet
-source ./dw_practical/bin/activate
+source ./dw_venv/bin/activate
 
 pytest
 ```
