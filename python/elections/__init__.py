@@ -1,7 +1,9 @@
 import os
-
+import sys
 from flask import Flask
 
+if sys.version_info[0] < 3:
+    raise Exception("Must be using Python 3")
 
 def create_app(test_config=None):
     # create and configure the app

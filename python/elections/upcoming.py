@@ -1,5 +1,3 @@
-import functools
-
 from elections.us_states import postal_abbreviations
 
 from flask import (
@@ -9,7 +7,8 @@ from flask import (
 bp = Blueprint('address_form', __name__, url_prefix='/')
 
 
-@bp.route('/', methods=('GET', 'POST'))
+@bp.route('/search', methods=('GET', 'POST'))
+@bp.route('/')
 def search():
     """Take in an address."""
     if request.method == 'POST':

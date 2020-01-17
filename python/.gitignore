@@ -12,3 +12,4 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+dw_venv/
