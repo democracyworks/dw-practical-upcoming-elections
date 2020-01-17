@@ -3,9 +3,7 @@
 Thank you for applying to work at Democracy Works! This coding
 exercise is designed to show off your ability to program a small
 application that interacts with an API. You should spend no more than
-2 hours on it and then turn it in to us. You may submit by zipping up
-the contents of your project's directory and emailing it to
-work@democracy.works with the subject line "Will Code for Democracy".
+2 hours on it and then turn it in to us.
 
 ## The project
 
