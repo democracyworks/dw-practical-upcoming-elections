@@ -1,0 +1,51 @@
+<div class="address-form">
+  <h1>Find my next election</h1>
+
+  <form action="/search" method="post" name="address">
+    <%= Rack::Csrf.tag(env) %>
+    <p>
+      Enter the address where you are registered to vote
+
+      <div>
+        <label for="street-field">Street:</label>
+        <input id="street-field"
+               type="text"
+               name="street"/>
+      </div>
+
+      <div>
+        <label for="street-2-field">Street 2:</label>
+        <input id="street-2-field"
+               type="text"
+               name="street_2"/>
+      </div>
+
+      <div>
+        <label for="city-field">City:</label>
+        <input id="city-field"
+               type="text"
+               name="city"/>
+      </div>
+
+      <div>
+        <label for="state-field">State:</label>
+        <select id="state-field"
+                name="state">
+          <option value=""></option>
+          <% us_states.each do | state | %>
+          <option value="<%= state %>"><%= state %></option>
+          <% end %>
+        </select>
+        <label for="zip-field">ZIP</label>
+        <input id="zip-field"
+               type="text"
+               name="zip"
+               size="10"/>
+      </div>
+
+      <div id="button">
+        <button type="submit">Search</button>
+      </div>
+    </p>
+  </form>
+</div>

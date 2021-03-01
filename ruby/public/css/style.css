@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+form {
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #CCC;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: .3em;
+  margin-left: 1em;
+}
+
+label:first-of-type {
+  width: 90px;
+  margin-left: 0;
+}
+
+input {
+  font: 1em sans-serif;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
