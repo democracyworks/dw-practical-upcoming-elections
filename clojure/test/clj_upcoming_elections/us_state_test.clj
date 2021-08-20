@@ -1,11 +1,10 @@
 (ns clj-upcoming-elections.us-state-test
-  (:require [clojure.test :refer :all]
-            [clj-upcoming-elections.us-state :refer :all]))
+  (:require [clojure.test :refer [deftest is]]
+            [clj-upcoming-elections.us-state :as us-state]))
 
 (deftest postal-abbreviations-test
-  (testing "there are 61 states, territories, military abbreviations, etc."
-    (is (= 61
-           (count postal-abbreviations)))
-    (testing "including states and districts with a current DW employee"
-      (is (every? (set postal-abbreviations)
-                  #{"CA" "CO" "DC" "IL" "KS" "KY" "MN" "NY" "RI" "VA" "WA"})))))
+  (is (= 61 (count us-state/postal-abbreviations))
+      "there are 61 postal abbreviations")
+  (is (every? (set us-state/postal-abbreviations)
+              #{"AR" "CA" "CO" "DC" "IL" "MN" "NY" "OR" "RI" "TN" "VA" "WA"})
+      "including states and districts with a current Democracy Works employee"))
