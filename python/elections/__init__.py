@@ -25,7 +25,6 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-
     from elections import upcoming
     app.register_blueprint(upcoming.bp)
 
