@@ -1,4 +1,4 @@
-# Upcoming Elections Practical
+# Democracy Works Practical: Upcoming Elections
 
 A [Flask](https://flask.palletsprojects.com/en/2.0.x/) web application that
 serves as a starting point for the Democracy Works hiring practical.

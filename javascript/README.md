@@ -1,4 +1,4 @@
-# Upcoming Elections Practical
+# Democracy Works Practical: Upcoming Elections
 
 This is a server-side web application written in JavaScript with
 [Express][express] and [Handlebars][handlebars].
