@@ -3,16 +3,15 @@
 A web application written in Ruby using [Sinatra][sinatra],
 [minitest][minitest], and [erb templates][erb].
 
-## Setup
+## Installation
 
-### Prerequisites
+### Requirements
 
 - [Ruby][ruby] version 2.3+
 - [bundler][bundler]
 - [rake][rake]
-- [rbenv][rbenv] (optional)
 
-### Installing the requirements
+### Dependencies
 
 ```sh
 ## Install the dependencies
@@ -22,37 +21,28 @@ bundle install
 rake test
 ```
 
-## Running
+## Usage
 
-From the same directory as this README:
+### Running
+
+To run the application, use the following command:
 
 ```sh
 bundle exec rackup
 ```
 
-## Quickstart
+### Tests
 
-After checking out the repo, run `bundle install` to install dependencies.
-Then, run `rake test` to run the tests. You can also run `bin/console`
-for an interactive prompt that will allow you to experiment.
+To run the test suite, use the following command:
 
-Start the webserver by running `rackup` in the project's toplevel directory.
-In your browser, navigate to `http://localhost:9292` and enter an
-address to see if there are currently any upcoming elections.
-
-
-## Testing
-
-`minitest` is used for unit tests. You can run the full test suite with:
-
-```
+```sh
 rake test
 ```
 
-[sinatra]: https://github.com/sinatra/sinatra
-[ruby]: https://github.com/ruby/ruby
 [bundler]: https://bundler.io/
-[rake]: https://github.com/ruby/rake
-[rbenv]: https://github.com/rbenv/rbenv
 [erb]: https://www.stuartellis.name/articles/erb/
 [minitest]: https://github.com/seattlerb/minitest
+[rake]: https://github.com/ruby/rake
+[rbenv]: https://github.com/rbenv/rbenv
+[ruby]: https://github.com/ruby/ruby
+[sinatra]: https://github.com/sinatra/sinatra

@@ -3,14 +3,16 @@
 A [Flask](https://flask.palletsprojects.com/en/2.0.x/) web application that
 serves as a starting point for the Democracy Works hiring practical.
 
-## Setup
+## Installation
 
-### Prerequisites
+### Requirements
 
 - Python 3.6 or higher. If you don't have it, [follow the instructions for your
   platform](https://realpython.com/installing-python/).
 
-### Installing the requirements
+### Dependencies
+
+To install the dependencies, run the following commands:
 
 ```sh
 ## Create a virtual Python environment in the `.venv` directory
@@ -31,9 +33,11 @@ pip install -r requirements.txt
 When you are done with the virtual environment, use `deactivate` to exit it and
 return to your normal shell, or quit your terminal program.
 
-## Running
+## Usage
 
-From the same directory as this README:
+### Running
+
+To run the application, use the following commands:
 
 ```sh
 ## OPTIONAL: If you haven't done this yet
@@ -44,7 +48,9 @@ export FLASK_ENV=development
 flask run
 ```
 
-## Testing
+### Tests
+
+To run the test suite, use the following command:
 
 ```
 ## OPTIONAL: If you haven't done this yet

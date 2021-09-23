@@ -23,18 +23,18 @@ elections for those OCD IDs, and display to the user any elections returned.
 
 ## Our grading rubric
 
-We evaluate submissions according to the following criteria:
+We evaluate submissions using a rubric containing the following criteria:
 
-* The form submits
-* State and place OCD IDs are correctly generated
-* The Democracy Works Elections API is called correctly
-* Returned elections are displayed to the user
-* The results are formatted for the user
-* The code that generates OCD IDs can be easily changed
-* The project has documentation
-* There are tests
-* Functions/classes/methods are small and clearly scoped
-* Names are clear
+* Does the README contain working instructions?
+* How well does the form submit?
+* Are state and place OCD IDs correctly generated?
+* Is the Democracy Works Elections API called correctly?
+* How are returned elections displayed to the user (design is not considered)?
+* Is the code that generates OCD IDs separate from the rest of the code?
+* How is the documentation quality (not necessarily quantity)?
+* How are the tests?
+* How well-scoped are functions/classes/methods?
+* How clear are the names?
 
 The goal is to see that you can get some working code that is readable to
 others. We do not expect you to complete everything on this list, nor is this
