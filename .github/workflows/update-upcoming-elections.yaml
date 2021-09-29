@@ -1,0 +1,42 @@
+on:
+  schedule:
+  - cron: '0 8 * * MON,WED'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout base code
+      uses: actions/checkout@v2
+
+    - name: Create upcoming elections Markdown file
+      env:
+        API_KEY: ${{ secrets.TURBOVOTE_API_KEY }}
+      run: |
+        ./generate-upcoming-elections.py > Upcoming-Elections.md
+
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: upcoming-elections-markdown
+        path: Upcoming-Elections.md
+        retention-days: 3
+
+    - name: Checkout wiki code
+      uses: actions/checkout@v2
+      with:
+        repository: ${{github.repository}}.wiki
+
+    - name: Download markdown
+      uses: actions/download-artifact@v2
+      with:
+        name: upcoming-elections-markdown
+
+    - name: Push to wiki
+      run: |
+        git config --local user.email "github-action@users.noreply.github.com"
+        git config --local user.name "GitHub Action"
+        git add Upcoming-Elections.md
+        git diff-index --quiet HEAD || git commit -m "Update upcoming elections"
+        git push
