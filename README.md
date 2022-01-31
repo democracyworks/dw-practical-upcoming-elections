@@ -131,7 +131,7 @@ list of OCD IDs that will return an election][upcoming-elections] until the
 dates they are listed under. Please refer to that for example OCD IDs that will
 return an election to your app.
 
-[ocd-ids]: http://opencivicdata.readthedocs.io/en/latest/data/datatypes.html
+[ocd-ids]: https://github.com/opencivicdata/docs.opencivicdata.org/blob/master/proposals/0002.rst
 [edn]: https://github.com/edn-format/edn
 [upcoming-elections]: https://github.com/democracyworks/dw-practical-upcoming-elections/wiki/Upcoming-Elections
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
