@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.21.0)
     coderay (1.1.3)
     daemons (1.4.1)
     domain_name (0.5.20190701)
@@ -23,7 +22,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.2.0)
       rack
     rack_csrf (2.6.0)
       rack (>= 1.1.0)
@@ -35,17 +34,16 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     ruby2_keywords (0.0.5)
-    sinatra (2.0.8.1)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
+    sinatra-contrib (2.2.0)
       multi_json
       mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
+      rack-protection (= 2.2.0)
+      sinatra (= 2.2.0)
       tilt (~> 2.0)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
@@ -66,7 +64,7 @@ DEPENDENCIES
   rake (~> 12.0)
   require_all
   rest-client
-  sinatra (= 2.0.8.1)
+  sinatra (= 2.2.0)
   sinatra-contrib
   thin
 
