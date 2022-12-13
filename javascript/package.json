@@ -10,11 +10,11 @@
     "tap": "^15.0.9"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.17.1",
-    "hbs": "~4.1.2",
-    "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.9",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "http-errors": "^1.6.2",
+    "morgan": "^1.9.0"
   }
 }
