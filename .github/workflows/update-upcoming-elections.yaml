@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout base code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Create upcoming elections Markdown file
       env:
@@ -17,19 +17,19 @@ jobs:
         ./generate-upcoming-elections.py > Upcoming-Elections.md
 
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: upcoming-elections-markdown
         path: Upcoming-Elections.md
         retention-days: 3
 
     - name: Checkout wiki code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: ${{github.repository}}.wiki
 
     - name: Download markdown
-      uses: actions/download-artifact@v4.1.7
+      uses: actions/download-artifact@v4
       with:
         name: upcoming-elections-markdown
 
