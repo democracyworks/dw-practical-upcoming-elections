@@ -21,7 +21,7 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    rack (2.2.13)
+    rack (2.2.14)
     rack-protection (2.2.3)
       rack
     rack_csrf (2.6.0)
